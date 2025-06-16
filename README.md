@@ -6,6 +6,10 @@
 
 不要担心，这个项目一定可以运行
 
+有问题找 deepwiki
+
+https://deepwiki.com/leftrk/RUC-thesis-template-for-LaTeX
+
 > 符合学校和老师的模板就是好模板，你需要仔细的考虑自己是否需要LaTeX，其实 Word 也是不错的软件。
 
 > 临近毕业，发邮件提问的学弟学妹越来越多了，希望大家开[issue](https://github.com/GH1995/RUC-thesis-template-for-LaTeX/issues)讨论，或者直接发PR，这样可以帮助更多的人。
