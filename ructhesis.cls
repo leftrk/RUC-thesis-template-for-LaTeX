@@ -71,7 +71,7 @@
 \def\cabstractpagesign{摘要}
 \def\eabstractpagesign{Abstract}
 \def\acknowledgesign{致谢}
-\newcommand{\RUCThesis}{{\tt R\kern-.107em\lower.5ex\hbox{U}\kern-.1em CThesis}}
+\newcommand{\RUCThesis}{{\ttfamily R\kern-.107em\lower.5ex\hbox{U}\kern-.1em CThesis}}
 \ifruc@bachelor
 \RequirePackage[top=25mm,left=25mm,bottom=25mm,right=20mm,footskip=10mm]{geometry}
 \setlength{\topskip}{10mm}
@@ -188,8 +188,8 @@ pdfsubject={中国人民大学学位论文}}
 \pagestyle{empty}
 \begin{center}
 \includegraphics[width=7.6cm,height=1.474cm]{figures/clogo.pdf}\\
-\sf\zihao{1}\ziju{0.4}\@sign\par
-\tt\zihao{3}
+\sffamily\zihao{1}\ziju{0.4}\@sign\par
+\ttfamily\zihao{3}
 \vspace{25mm}\ziju{0}\linespread{1.5}\selectfont
 （中文题目）\underline{\parbox[b]{110mm}\@title}\hfill\par\vspace{3mm}
 （英文题目）\underline{\parbox[b]{110mm}\@etitle}\hfill\par
@@ -222,23 +222,23 @@ With package \tt{\RUCThesis}\\
 \fi
 \newenvironment{abstractzh}
 {\clearpage\chapter*{\cabstractpagesign}\vspace*{-5mm}
-\pagenumbering{Roman}\zihao{-4}\rm}
-{\par\vspace*{7mm}\noindent\sf\zihao{-4}关键词：
-\rm\zihao{-4}\@keywordzh
+\pagenumbering{Roman}\zihao{-4}\rmfamily}
+{\par\vspace*{7mm}\noindent\sffamily\zihao{-4}关键词：
+\rmfamily\zihao{-4}\@keywordzh
 \thispagestyle{headings}}
 \newenvironment{abstracten}
 {\clearpage
 \ifruc@bachelor\linespread{2}\selectfont
 \chapter*{\bf{\eabstractpagesign}}\vspace*{-5mm}
 \else\chapter*{\sf{\eabstractpagesign}}\vspace*{-5mm}\fi
-\zihao{-4}\rm}
+\zihao{-4}\rmfamily}
 {\par\vspace*{7mm}\noindent
 \zihao{-4}\textbf{Key Words : }
-\rm\zihao{-4}\@keyworden
+\rmfamily\zihao{-4}\@keyworden
 \thispagestyle{headings}\rowspace}
 \newenvironment{acknowledge}
 {\chapter*{\acknowledgesign}\vspace*{-5mm}
-\addcontentsline{toc}{chapter}{\acknowledgesign}\zihao{-4}\rm}
+\addcontentsline{toc}{chapter}{\acknowledgesign}\zihao{-4}\rmfamily}
 {\thispagestyle{plain}}
 \newcommand{\authorization}[1]
 {\ifruc@doctor\cleardoublepage\else\clearpage\fi
@@ -249,13 +249,13 @@ text={\paperwidth,\paperheight},marginparwidth=0mm}\hspace{-9mm}
 \restoregeometry}
 \newcommand{\originality}{
 \chapter*{\zihao{-2}\heiti 独创性声明}
-{\tt\zihao{-4}本人郑重声明：所呈交的论文是我个人在导师的指导下进行的研究工作及取得的研究成果。尽我所知，除了文中特别加以标注和致谢的地方外，论文中不包含其他人已经发表或撰写的研究成果，也不包含为获得中国人民大学或其他教育机构的学位或证书所使用过的材料。与我一同工作的同志对本研究所做的任何贡献均已在论文中作了明确的说明并表示了谢意。\par}
+{\ttfamily\zihao{-4}本人郑重声明：所呈交的论文是我个人在导师的指导下进行的研究工作及取得的研究成果。尽我所知，除了文中特别加以标注和致谢的地方外，论文中不包含其他人已经发表或撰写的研究成果，也不包含为获得中国人民大学或其他教育机构的学位或证书所使用过的材料。与我一同工作的同志对本研究所做的任何贡献均已在论文中作了明确的说明并表示了谢意。\par}
 \vskip 10mm\hfill
 论文作者：\rule[-1ex]{30mm}{0.25pt}\qquad
 日\qquad 期：\rule[-1ex]{30mm}{0.25pt}\par
 \vfil\centerline{\heiti\zihao{-2}关于论文使用授权的说明}
 \vskip 13mm
-{\tt 本人完全了解中国人民大学有关保留、使用学位论文的规定，即：学校有保留送交论文的复印件，允许论文被查阅和借阅；学校可以公布论文的全部或部分内容，可以采用影印、缩印或其他复制手段保存论文。\par
+{\ttfamily 本人完全了解中国人民大学有关保留、使用学位论文的规定，即：学校有保留送交论文的复印件，允许论文被查阅和借阅；学校可以公布论文的全部或部分内容，可以采用影印、缩印或其他复制手段保存论文。\par
 \vskip 10mm\hfill
 论文作者：\rule[-1ex]{30mm}{0.25pt}\qquad
 日\qquad 期：\rule[-1ex]{30mm}{0.25pt}\par
@@ -281,18 +281,18 @@ subsubsection = {
 number = \thesubsection.\arabic{subsubsection}
 },
 chapter/format =\vspace{-15mm}\centering,
-chapter/numberformat = \bf\zihao{3},
-chapter/titleformat = \sf\zihao{3},
-chapter/nameformat = \sf\zihao{3},
+chapter/numberformat = \bfseries\zihao{3},
+chapter/titleformat = \sffamily\zihao{3},
+chapter/nameformat = \sffamily\zihao{3},
 section/format = ,
-section/numberformat = \bf\zihao{4},
-section/titleformat = \sf\zihao{4},
+section/numberformat = \bfseries\zihao{4},
+section/titleformat = \sffamily\zihao{4},
 subsection/format = ,
-subsection/numberformat = \bf\zihao{-4},
-subsection/titleformat = \sf\zihao{-4},
+subsection/numberformat = \bfseries\zihao{-4},
+subsection/titleformat = \sffamily\zihao{-4},
 subsubsection/format = ,
-subsubsection/numberformat = \bf\zihao{5},
-subsubsection/titleformat =\sf \zihao{5}
+subsubsection/numberformat = \bfseries\zihao{5},
+subsubsection/titleformat =\sffamily \zihao{5}
 }
 \else
 \ctexset{
@@ -301,34 +301,34 @@ name = {第,章},
 number = \arabic{chapter}
 },
 chapter/format =\centering,
-chapter/numberformat = \bf\zihao{-2},
-chapter/nameformat = \sf\zihao{-2},
-chapter/titleformat = \sf\zihao{-2},
+chapter/numberformat = \bfseries\zihao{-2},
+chapter/nameformat = \sffamily\zihao{-2},
+chapter/titleformat = \sffamily\zihao{-2},
 section/format = ,
-section/titleformat =\sf\zihao{-3},
-section/numberformat = \bf\zihao{-3},
+section/titleformat =\sffamily\zihao{-3},
+section/numberformat = \bfseries\zihao{-3},
 subsection/format = ,
-subsection/numberformat = \bf\zihao{-4},
-subsection/titleformat = \sf\zihao{-4},
+subsection/numberformat = \bfseries\zihao{-4},
+subsection/titleformat = \sffamily\zihao{-4},
 subsubsection/format = ,
-subsubsection/titleformat = \sf\zihao{5},
-subsubsection/numberformat = \bf\zihao{5}
+subsubsection/titleformat = \sffamily\zihao{5},
+subsubsection/numberformat = \bfseries\zihao{5}
 }
 \fi
 \RequirePackage{titletoc}
-\titlecontents{chapter}[0pt]{\sf\zihao{4}\addvspace{2pt}\filright}
+\titlecontents{chapter}[0pt]{\sffamily\zihao{4}\addvspace{2pt}\filright}
 {\contentspush{\thecontentslabel\ }}
 {}{\titlerule*[10pt]{.}{\bf\contentspage}}
-\titlecontents{section}[2em]{\rm\zihao{-4}\addvspace{2pt}\filright}
+\titlecontents{section}[2em]{\rmfamily\zihao{-4}\addvspace{2pt}\filright}
 {\contentspush{\thecontentslabel\ }}
 {}{\titlerule*[10pt]{.}\contentspage}
-\titlecontents{subsection}[4em]{\rm\zihao{-4}\addvspace{2pt}\filright}
+\titlecontents{subsection}[4em]{\rmfamily\zihao{-4}\addvspace{2pt}\filright}
 {\contentspush{\thecontentslabel\ }}
 {}{\titlerule*[10pt]{.}\contentspage}
-\titlecontents{figure}[10pt]{\rm\zihao{-4}\addvspace{2pt}}
+\titlecontents{figure}[10pt]{\rmfamily\zihao{-4}\addvspace{2pt}}
 {图~\thecontentslabel\, }
 {}{\titlerule*[10pt]{.}\contentspage}
-\titlecontents{table}[10pt]{ \rm\zihao{-4}\addvspace{2pt}}
+\titlecontents{table}[10pt]{ \rmfamily\zihao{-4}\addvspace{2pt}}
 {表~\thecontentslabel\, }
 {}{\titlerule*[10pt]{.}\contentspage}
 \RequirePackage{ifxetex}
@@ -453,7 +453,7 @@ subsubsection/numberformat = \bf\zihao{5}
 \else
 \ifruc@promaster\promasteresign
 \else\bacheloresign
-\fi\fi\fi\par}\sf\zihao{-3}
+\fi\fi\fi\par}\sffamily\zihao{-3}
 \vspace{40mm}\ziju{0}\linespread{1.5}\rule[0mm]{0mm}{30mm}
 \ifruc@doctor\color{rucbalck}\else\color{rucwhite}\fi
 论文题目：\underline{\parbox[b]{100mm}\@title}\hfill\par \rule[0mm]{0mm}{10mm}
@@ -467,31 +467,31 @@ subsubsection/numberformat = \bf\zihao{5}
 \thispagestyle{empty}
 \ifruc@shuji
 \ifruc@doctor\color{rucbalck}\else\color{rucwhite}\fi
-\uput[u]{0}(0.5\paperheight,15){{\sf\zihao{3}\shortstack[c]{\@covertitle}}}
-\uput[u]{0}(0.5\paperheight,3){{\sf\zihao{3}\shortstack[c]{中\\国\\人\\民\\大\\学}}}
+\uput[u]{0}(0.5\paperheight,15){{\sffamily\zihao{3}\shortstack[c]{\@covertitle}}}
+\uput[u]{0}(0.5\paperheight,3){{\sffamily\zihao{3}\shortstack[c]{中\\国\\人\\民\\大\\学}}}
 \else\fi
 \end{landscape}
 \restoregeometry
 }
 \RequirePackage{natbib}%参考文献
-\RequirePackage{caption2}
-\captionstyle{normal}
-\renewcommand{\captionfont}{\zihao{5}\rm}
-\renewcommand{\captionlabelfont}{\zihao{5}\bf}
-\renewcommand{\captionlabeldelim}{\,\,}
+\RequirePackage{caption}
+\DeclareCaptionFont{ruccaptionfont}{\zihao{5}\rmfamily}
+\DeclareCaptionLabelFormat{ruccaptionlabel}{\zihao{5}\bfseries #1~#2}
+\captionsetup{font=ruccaptionfont,labelformat=ruccaptionlabel,labelsep=quad}
+\RequirePackage{subcaption}
 \RequirePackage{booktabs}%三线表
 \RequirePackage{colortbl}%表格颜色
 \RequirePackage{diagbox}%表头制作
 \RequirePackage{longtable}%长表格
 \let\ruc@LT@array\LT@array
-\def\LT@array{\zihao{5}\rm\ruc@LT@array}
-\let\old@tabular\@tabular
-\def\ruc@tabular{\old@tabular\zihao{5}}
+\def\LT@array{\zihao{5}\rmfamily\ruc@LT@array}
+\let\old@tabular\tabular
+\let\endold@tabular\endtabular
+\renewenvironment{tabular}[2][c]{\zihao{5}\old@tabular[#1]{#2}}{\endold@tabular}
 \RequirePackage{multirow}%跨行宏包
 \setlength{\abovecaptionskip}{6pt}
 \setlength{\belowcaptionskip}{6pt}
 \RequirePackage{wrapfig}%图文混排，段落首字下沉
-\RequirePackage{subfigure}%子图
 \RequirePackage{tikz}%绘图
 \RequirePackage{amsmath,amsfonts}%
 \RequirePackage{latexsym,bm}%
