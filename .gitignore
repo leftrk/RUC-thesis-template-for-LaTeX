@@ -1,0 +1,15 @@
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.lot
+*.lof
+*.thm
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.pdf
+!main.pdf
+!ructhesis.pdf

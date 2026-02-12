@@ -34,23 +34,25 @@
     \centering
     \caption{并排子表格}
     \label{tab:subtable}
-    \subtable[第一个子表格]
-    {
+    \begin{subtable}[t]{0.4\textwidth}
+        \centering
+        \caption{第一个子表格}
         \begin{tabular}{p{2cm}p{2cm}}
             \toprule[1.5pt]
             姓名 & 性别 \\\midrule[1pt]
             田狗蛋 & 男 \\\bottomrule[1.5pt]
         \end{tabular}
-    }
-    \hskip2cm
-    \subtable[第二个子表格]
-    {
+    \end{subtable}
+    \hfill
+    \begin{subtable}[t]{0.4\textwidth}
+        \centering
+        \caption{第二个子表格}
         \begin{tabular}{p{2cm}p{2cm}}
             \toprule[1.5pt]
             姓名 & 性别 \\\midrule[1pt]
             李狗蛋 & 女 \\\bottomrule[1.5pt]
         \end{tabular}
-    }
+    \end{subtable}
 \end{table}
 
 \subsection{数学环境}
